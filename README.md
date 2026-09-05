@@ -33,6 +33,11 @@ After preprocessing, the final dataset contained:
 | Drowsy | 14,056 | 4,016 | 2,296 |
 | Non-Drowsy | 12,286 | 3,510 | 1,904 |
 | **Total** | **26,342** | **11,289** | **4,200** |
+### Sample Dataset Images
+
+The following figure shows representative samples from the drowsiness detection dataset.
+
+![Sample Drowsiness Detection Dataset](results/dataset_samples.png)
 
 ## Preprocessing
 
@@ -103,6 +108,11 @@ All three models were trained under the same configuration:
 | Model C | 0.9992 | 0.0047 | 0.9990 | 0.0261 |
 
 Model A achieved the strongest overall performance despite being the simplest of the three architectures.
+### Training and Validation Performance
+
+The training and validation curves for the three CNN architectures are shown below.
+
+![Training and Validation Curves](results/training_validation_curves.png)
 
 ## Final Test Performance
 
@@ -114,11 +124,22 @@ The best-performing model, **Model A**, achieved:
 
 The confusion matrix showed only a very small number of misclassifications across the test set.
 
+### Confusion Matrix
+
+The confusion matrix below shows the classification performance of the best-performing CNN on the held-out test dataset.
+
+![Confusion Matrix](results/confusion_matrix.png)
+
 ## External Image Testing
 
 The final model was also evaluated using four previously unseen images that were not part of the training, validation, or testing datasets.
 
 All four external images were classified correctly with high confidence.
+### Predictions on Previously Unseen Images
+
+The following figure shows predictions made on external images that were not included in the training, validation, or test datasets.
+
+![External Image Predictions](results/external_image_predictions.png)
 
 ## Key Findings
 
